@@ -36,7 +36,7 @@ async function hiFunction() {
 //        await waitForMs(500);
 //    }
     updateFontColor('herro', '#BDD5D7');
-    await typeSentence("Resume", 'herro');
+    await typeSentence("Hello!", 'herro');
 }
 
 function updateFontColor(id, color) {
