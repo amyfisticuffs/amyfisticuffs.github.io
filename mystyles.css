@@ -2,46 +2,51 @@
     color: #0F519F;
   }
   
-  .header-div-image {
-    height: 250px;
-    width: 100%;
-    position: relative;
-    background-image: url("computer.jpg");
-  }
-  
   .header-div {
-    height: 400px;
+    height: 350px;
     width: 100%;
     padding: 0px 0px 0px 70px;
     overflow:scroll;
     font-weight: bold;
+    background-image: url("images/bokeh-2072271_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #0A2C5C;
+  }
+
+  .header-div a {
+    color: #0A2C5C;
   }
   
   .giant {
-    font-size: 175px;
+    font-size: 6rem;
   }
-  
-  .menu-div {
-    height: 75px;
-    width: 100%;
-    position: relative;
-    background-image: url("computer.jpg");
-  }
-  
-  .image-cropper {
-    width: 140px;
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 3px solid #F6F6F6;
-  }
-  
+
+  @media screen and (max-width: 768px) {
+    .giant {
+        font-size: 3rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .giant {
+        font-size: 2.5rem; /* Further adjust font size for even smaller screens */
+    }
+}
+
   img {
     display: inline;
     margin: 0 auto;
     height: 100%;
     width: auto;
+  }
+
+  .rounded-img {
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    height: auto;
+    border: 1px solid #02506B;
   }
   
   .vertical-center {
@@ -65,6 +70,7 @@
   
   .topnav {
     overflow: hidden;
+    background-color: #DCAFBF;
   }
   
   .topnav a {
@@ -79,7 +85,7 @@
   .topnav a:hover {
     background-color: rgb(221,221,221, .5);
     border-radius: 110px;
-    color: black;
+    color: #0A2C5C;
   }
   
   .topnav a.active {
@@ -129,6 +135,10 @@
     color: white;
     background-color: #5180C0;
   }
+
+  a:link {
+    text-decoration: none;
+  }
   
   .block {
     border: 1px solid red;
@@ -140,12 +150,14 @@
     background: #408697;
     border: 1px solid rgba(255, 255, 255, .5);
     border-radius: 110px;
-    color: white;
+    color: #02506B;
     height: 110px;
     font-weight: bold;
     width: 110px;
     display: table;
     margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
   }
   
   .circle p {
@@ -156,28 +168,21 @@
   .circle:hover {
     border: 2px solid rgba(255, 255, 255, 1);
     border-style: double;
+    color: white;
   }
   
   .spacer {
     padding: 3rem 2rem;
   }
-  
+
   table {
-    border-spacing: 30px;
-    width:75%;
+    width: 100%;
+    border-collapse: collapse;
   }
-  
-  .column40 {
-    float: right;
-    width: 40%;
-    padding: 5px;
-  }
-  
-  .column60 {
-    float: left;
-    width: 60%;
-    padding: 5px;
-  }
+th, td {
+    padding: 8px;
+    text-align: left;
+}
   
   /* Clear floats after the columns */
   .row:after {
@@ -227,62 +232,23 @@
   footer {
     text-align: center;
     padding: 3px;
-    background-color: #BDD5D7;
+    background-color: #DCAFBF;
     color: #ffffff;
   }
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     align-items: center;
-    grid-gap: 40px;
+    grid-gap: 1px;
+    background-color: #02506B;
   }
-  
-  .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
+
+  .grid-item img {
+    width: 50%; 
+    height: auto; /* Maintain aspect ratio */
   }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: left;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background-color: #BDD5D7;
-    color: #ffffff;
-  }
-  
-  .flip-card-back {
-    background-color: #BDD5D7;
-    color: #ffffff;
-    transform: rotateY(180deg);
-  
-    .flip-card-container {
-      position: relative;
-      text-align: left;
-      color: black;
-    }
   
     .bottom-left {
       position: absolute;
@@ -314,4 +280,37 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+      padding: 20px;
+      margin: 10px;
+  }
+
+  .component {
+      flex: 1; /* Flex-grow: 1 (grow to fill available space) */
+      padding: 20px;
+      margin: 10px;
+      box-sizing: border-box; /* Include padding and border in width calculation */
+      box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+  }
+
+  .full-width-component {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+}
   
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+      .container {
+          flex-direction: column; /* Stack items vertically on smaller screens */
+      }
+  }
+
+  .padding-margin { /* used in header-div */
+    padding: 20px; 
+    margin: 10px; 
+  }

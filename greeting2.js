@@ -1,9 +1,3 @@
-const greetingArray = [
-    // { text: "HI! I'm Lola", color: "#FDF3DA" },
-    { text: "Welcome", color: "#FFC1B2" },
-    { text: "to my", color: "#DCE6E5" }
-];
-
 async function typeSentence(word, id, delay = 100) {
     const letters = word.split("");
     let i = 0;
@@ -28,15 +22,8 @@ async function deleteSentence(id) {
 
 async function hiFunction() {
     var i = 0;
-//    for (let i = 0; i < greetingArray.length; i++) {
-//        updateFontColor('herro', greetingArray[i].color)
-//        await typeSentence(greetingArray[i].text, 'herro');
-//        await waitForMs(1500);
-//        await deleteSentence('herro');
-//        await waitForMs(500);
-//    }
-    updateFontColor('herro', '#BDD5D7');
-    await typeSentence("Resume", 'herro');
+    updateFontColor('herro', '#0A2C5C');
+    await typeSentence("Hello!", 'herro', 200);
 }
 
 function updateFontColor(id, color) {
