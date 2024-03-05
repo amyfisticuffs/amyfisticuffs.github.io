@@ -316,7 +316,7 @@ th, td {
   
   /* Container around content */
   .timeline-container {
-    padding: 4px 2px;
+    padding: 16px 8px;
     position: relative;
     width: 90%;
   }
