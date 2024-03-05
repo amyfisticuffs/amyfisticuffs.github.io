@@ -46,6 +46,12 @@
     width: auto;
   }
 
+  p.left-border {
+    border-style: none none none solid;
+    border-width: 2px;
+    padding: 6px;
+  }
+
   .rounded-img {
     border-radius: 50%;
     width: 50%;
@@ -218,7 +224,7 @@ th, td {
     text-align: center;
     padding: 3px;
     background-color: #F7E9EE;
-    color: #ffffff;
+    color: #0A2C5C;
   }
   
   .grid {
@@ -393,7 +399,7 @@ th, td {
     .timeline::after {
     left: 31px;
     }
-    
+
     /* Full-width containers */
     .container {
     width: 100%;
