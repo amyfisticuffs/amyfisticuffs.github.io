@@ -108,8 +108,8 @@
     float: left;
     color: white;
   }
-  
-  ul.left {
+
+    ul.left {
     display:inline-block;
     border-left: 1px solid rgba(255, 255, 255, .5);
     padding:20px;
@@ -133,7 +133,7 @@
     display: block;
     color: #0A2C5C;
     text-align: left;
-    padding: 14px 16px;
+    padding: 0px 0px;
     text-decoration: none;
   }
   
