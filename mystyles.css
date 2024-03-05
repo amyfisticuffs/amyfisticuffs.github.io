@@ -63,8 +63,9 @@
     transform: translateY(-50%);
   }
 
-  .col-50 {
-    width: 50%;
+  a:link {
+    text-decoration: none;
+    color: #0A2C5C;
   }
   
   .overlay {
@@ -130,8 +131,8 @@
   
   li a {
     display: block;
-    color: white;
-    text-align: center;
+    color: #0A2C5C;
+    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
   }
@@ -273,18 +274,10 @@ th, td {
   .component {
       flex: 1; /* Flex-grow: 1 (grow to fill available space) */
       padding: 20px;
-      margin: 10px;
+      margin: 40px;
       box-sizing: border-box; /* Include padding and border in width calculation */
       box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
   }
-
-  .full-width-component {
-    width: 100%;
-    padding: 20px;
-    margin: 10px;
-    box-sizing: border-box; /* Include padding and border in width calculation */
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
-}
   
   /* Media query for responsiveness */
   @media screen and (max-width: 768px) {
@@ -323,9 +316,9 @@ th, td {
   
   /* Container around content */
   .timeline-container {
-    padding: 10px 10px;
+    padding: 4px 2px;
     position: relative;
-    width: 70%;
+    width: 80%;
   }
   
   /* The circles on the timeline */
@@ -364,7 +357,7 @@ th, td {
     right: 30px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent  rgba(10, 44, 92, .1);;
   }
   
   /* Add arrows to the right container (pointing left) */
@@ -378,7 +371,7 @@ th, td {
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent  rgba(10, 44, 92, .1) transparent transparent;
   }
   
   /* Fix the circle for containers on the right side */
