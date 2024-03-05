@@ -62,6 +62,10 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
+  .col-50 {
+    width: 50%;
+  }
   
   .overlay {
     position: absolute;
@@ -218,11 +222,10 @@ th, td {
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     grid-gap: 1px;
-    background-color: #02506B;
   }
 
   .grid-item img {
@@ -301,7 +304,6 @@ th, td {
   
   /* The actual timeline (the vertical ruler) */
   .timeline {
-    background-color: #F7E9EE;
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
@@ -311,20 +313,19 @@ th, td {
   .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
-    background-color: white;
+    width: 2px;
+    background-color: #0A2C5C;
     top: 0;
     bottom: 0;
-    left: 50%;
+    left: 5%;
     margin-left: -3px;
   }
   
   /* Container around content */
   .timeline-container {
-    padding: 10px 40px;
+    padding: 10px 10px;
     position: relative;
-    background-color: #F7E9EE;
-    width: 50%;
+    width: 70%;
   }
   
   /* The circles on the timeline */
@@ -341,14 +342,15 @@ th, td {
     z-index: 1;
   }
   
-  /* Place the container to the left */
+  /* Place the container to the left 
   .left {
     left: 0;
   }
-  
+  */
+
   /* Place the container to the right */
   .right {
-    left: 50%;
+    left: 5%;
   }
   
   /* Add arrows to the left container (pointing right) */
