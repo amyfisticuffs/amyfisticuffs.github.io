@@ -222,8 +222,11 @@ th, td {
   }
   
   footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    padding: 3px;
+    padding: 20px;
     background-color: #F7E9EE;
     color: #0A2C5C;
   }
@@ -328,8 +331,8 @@ th, td {
     line-height: 1.5;
     min-height: 100vh;
     font-family: "Outfit", sans-serif;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
   }
   
   button,
@@ -413,7 +416,7 @@ th, td {
     }
   
     &.filled-icon {
-      background-color: var(--c-blue-500);
+      /* background-color: var(--c-blue-500);*/
       color: #fff;
     }
   }
