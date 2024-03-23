@@ -87,7 +87,7 @@
   
   .topnav {
     overflow: hidden;
-    background-color: #F7E9EE;
+    background-color: #FFE0E0;
   }
   
   .topnav a {
@@ -227,7 +227,7 @@ th, td {
     width: 100%;
     text-align: center;
     padding: 20px;
-    background-color: #F7E9EE;
+    background-color: #FFE0E0;
     color: #0A2C5C;
   }
   
@@ -282,6 +282,7 @@ th, td {
   }
 
   .component {
+      background-color: #FFFFFF;
       flex: 1; /* Flex-grow: 1 (grow to fill available space) */
       padding: 20px;
       margin: 40px;
