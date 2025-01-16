@@ -12,327 +12,175 @@
         crossorigin="anonymous"></script>
     <script src="contactIcons.js" type="text/javascript"></script>
     <script src="greeting2.js" type="text/javascript"></script>
-    <title>My Resume</title>
+    <title>Amelia Fedyk</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
-<body onload="hiFunction(); populateContactIcons();" style="background:#FFE0E0; color:#0A2C5C;">
+<body onload="populateContactIcons();" style="background:#A4CBA4; color:#0A2C5C; font-family: Arial;">
     <div class="topnav">
-        <a href="images/AHFedyk_resume_10Apr2024-online.pdf">Resume</a>
-        <a href="#Publications">Publications</href></a>
+        <a href="images/ahf-resume-11Jan2025-online.pdf">Resume</a>
         <a href="#Volunteer Experience">Volunteering</a>
+        <a href="#Publications">Publications</href></a>
+        <a href="#Education">Education</a>
         <a href="#Experience">Experience</a>
         <a href="#Skills">Skills</a>
-        <a href="#About">About</a>
     </div>
+
     <div class="header-div">
-        <div class="padding-margin">
-            <p class="giant" id="herro"></p>
-            <h2 class="fadeIn">
-                <span>Amelia Fedyk,</span>
-                <span style="font-size: 0.7em;">Software Development</span>
-                <span style="font-size: 0.7em;">& Design</span>
-            </h2>
-        </div>
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody id="iconTable"></tbody>
-            </table>
+        <div class="info-panel">
+            <div class="padding-margin">
+                <h1><b>Amelia Fedyk</b></h1>
+                <h2 class="fadeIn">
+                    <span style="font-size: 0.7em;">Software Development</span>
+                    <span style="font-size: 0.7em;">| Cybersecurity</span>
+                </h2>
+                <div class="row">
+                    <div class="column left">
+                      <p>Results-driven and skilled Software Developer with a proven track 
+                        record in software engineering and UI development. Recently expanded 
+                        expertise into cybersecurity through graduate-level coursework.</p>
+                    </div>
+                    <div class="column right">
+                        <div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="iconTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div> 
+            </div>
         </div>
     </div>
-
-
-    <div id='About'><a name='About'></a></div>
-    <div class="component">
-        <h2>About Me</h2>
-
-        <p>
-            Hi! I am Amelia Fedyk. I'm a results-driven and skilled Software Developer with a
-            proven track record in programming and UI development and 18 years of experience.
-            I'm passionate about software development and I recently found a new love in cyber security.
-            I excel in team environments and I'm eager to contribute to DoD and other interesting projects.
-            I recently engaged in part-time consulting
-            roles and leveraged volunteer positions to enhance technical
-            skills during a career gap.
-        </p>
-
-    </div>
-
+    <div id="spacer" style="width: 200px; height: 200px; margin-right:0px;"></div>
 
     <div id='Skills'><a name='Skills'></a></div>
     <div class="component">
         <h2>Skills</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <p>Communication</p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%"
-                                aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </td>
-                    <td>
-                        <p>Collaboration</p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 95%"
-                                aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Customer Support</p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 85%"
-                                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </td>
-                    <td>
-                        <p>Software Development</p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%"
-                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Python</p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 65%;"
-                                aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </td>
-                    <td>
-                        <p>Object Oriented Design</p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%"
-                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Java</p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%"
-                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </td>
-                    <td>
-                        <p>Javascript</p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%"
-                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>HTML, CSS</p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%"
-                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p>See my <a href="images/AHFedyk_resume_10Apr2024-online.pdf"><strong>RESUME</strong></a> for full set of skills</p>
+        <ul>
+          <li><b>Software Development:</b> Full Stack Development, Object-Oriented Design, 
+            Data Structures & Algorithms, Distributed Systems</li>
+          <li><b>Cyber Security Tools:</b> Autopsy, FTK, WinHex, Wireshark, LECmd, KAPE</li>
+          <li><b>UI/UX:</b> Dynamic and interactive UIs, CSS, JavaScript frameworks, Responsive Design</li>
+          <li><b>Tools and Platforms:</b> Linux OS, GitHub, Visual Studio, Eclipse, IntelliJ IDEA</li>
+          <li><b>Cloud Platforms:</b> Hands-on experience with leading platforms, including Azure and AWS,
+            leveraging their services for application deployment, cloud infrastructure management,
+            and scalable solutions.</li>
+          <li><b>Databases & Web Services:</b> MySQL, SQL, RESTful APIs, JSON, Web Services, API
+            integration</li>
+          <li><b>Programming Languages:</b> Java, JavaScript, Python, C, C++, Perl</li>
+        </ul>
     </div>
 
 
     <div id='Experience'><a name='Experience'></a></div>
     <div class="component">
         <h2>Experience</h2>
+        <table>
+            <tr>
+                <th style="width:100px;"></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><img src="images/globe.png"></td>
+                <td><b>Pro Bono Software Engineering, Post Graduate Work (2020-Present)</b>
+                    <ul>
+                        <li>Created cloud-based applications leveraging Azure and AWS, focusing 
+                            on scalability, data integration, and dynamic content delivery during 
+                            graduate coursework</li>
+                        <li>
+                            Gained hands-on experience in forensic investigations through coursework, 
+                            analyzing digital evidence across platforms including Windows, Linux, 
+                            macOS, and mobile devices. Explored network activity, email analysis, and 
+                            memory forensics while adhering to ethical standards in digital investigations.
+                        </li>
+                        <li>
+                            Built Java-based tools to streamline inventory management, 
+                            recovery processes, and workflows for purchase orders and receiving 
+                            by integrating SquareUp system files for a small retail establishment.
+                        </li>
 
-        <ol class="timeline">
-            <li class="timeline-item | extra-space">
-                <span class="timeline-item-icon | filled-icon">
-                    <div class="avatar">
-                        <img alt src="images/innerDragon.png" loading="lazy">
-                    </div>
-                </span>
-                <div class="timeline-item-wrapper">
-                    <div class="timeline-item-description">
-                        <h3>2012 - 2013</h3>
-                        <span>Software Engineering Consultant<br>Inner Dragon Consulting, Greater Boston Area</span>
-                    </div>
-                    <div class="comment">
-                        <p>In 2012, I launched my own company and contracted with STR where I implemented 
-                            user interfaces to facilitate the visualization and understanding of dynamic, complex datasets.</p>
-                    </div>
-            </li>
-
-            <li class="timeline-item | extra-space">
-                <span class="timeline-item-icon | filled-icon">
-                    <div class="avatar">
-                        <img alt src="images/bbn.webp" loading="lazy">
-                    </div>
-                </span>
-                <div class="timeline-item-wrapper">
-                    <div class="timeline-item-description">
-                        <h3>1999 - 2011</h3>
-                        <span>Senior Software Engineer<br>BBN Technologies, Cambridge, MA</span>
-                    </div>
-                    <div class="comment">
-                        <p>During my years at BBN I designed and implemented a Java web-services-based 
-                            distributed framework for real-time information assurance assessment during 
-                            transactions, enhancing the security posture of information systems. I also 
-                            worked on a healthcare initiative where I developed a UI to support the 
-                            efficient exploration and organization of medical record data from disparate 
-                            heterogenous sources for outcome-based analytics. I was fortunate to work with 
-                            a great team on the long running AMP DoD contract where I worked on modeling 
-                            logistics demand and inventory management strategies for distributed, multi-agent 
-                            systems which also gave me many opportunities to support customers and external 
-                            contractors.</p>
-                    </div>
-            </li>
-
-            <li class="timeline-item | extra-space">
-                <span class="timeline-item-icon | filled-icon">
-                    <div class="avatar">
-                        <img alt src="images/Raytheon-Emblem-1024x640.png" loading="lazy">
-                    </div>
-                </span>
-                <div class="timeline-item-wrapper">
-                    <div class="timeline-item-description">
-                        <h3>1996 - 1999</h3>
-                        <span>Software Engineer<br>Raytheon, Marlborough, MA</span>
-                    </div>
-                    <div class="comment">
-                        <p>Raytheon held exciting and important work for me. I developed user interfaces (UIs) 
-                            for the STARS (Standard Terminal Automation Replacement System) Air Traffic Control 
-                            Situation Data Display. STARS is now being used in many TRACONs around the United States. 
-                            At the beginning of my Raytheon career I teamed with Systems Engineers to design an 
-                            interface to collect and display information from a time-critical distributed battle 
-                            simulation test-bed.</p>
-                    </div>
-            </li>
-
-            <li class="timeline-item | extra-space">
-                <span class="timeline-item-icon | filled-icon">
-                    <div class="avatar">
-                        <img alt src="images/xerox.webp" loading="lazy">
-                    </div>
-                </span>
-                <div class="timeline-item-wrapper">
-                    <div class="timeline-item-description">
-                        <h3>1995 - 1996</h3>
-                        <span>Associate Software Engineer<br> Xerox, Webster, NY</span>
-                    </div>
-                    <div class="comment">
-                        <p>Fresh out of college I started my career at Xerox as a maintenance Engineer 
-                            for high speed monochrome and color laser printers. It was my first exposure 
-                            to real-time operating systems on a product which had many customers throughout 
-                            the world. I represented the Print Engine Development Unit at customer sites. 
-                            Listening to customers' problems and concerns helped me develop an appreciation 
-                            for well-built interfaces.</p>
-                    </div>
-            </li>
-        </ol>        
-
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="icon-image" src="images/innerDragon.png"></td>
+                <td><b>Inner Dragon Consulting, Greater Boston Area</b>
+                    <ul>
+                        <li>STR, Woburn MA (2012-2013) - Implemented User Interfaces to 
+                            facilitate visualization and understanding of dynamic, complex 
+                            datasets</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+              <td><img class="icon-image" src="images/bbn.png"></td>
+              <td><b>Senior Software Engineer, BBN Technologies; Cambridge, MA (1999-2011)</b>
+                <ul>
+                    <li>Designed and implemented a Java web-services-based distributed framework 
+                        for real-time information assurance assessment during transactions, 
+                        enhancing the security posture of information systems</li>
+                    <li>
+                        Developed UI to support efficient exploration and organization of 
+                        medical record data from disparate heterogenous sources for outcome-based analytics
+                    </li>
+                    <li>
+                        Modeled logistics demand and inventory management strategies for distributed, 
+                        multi- agent systems
+                    </li>
+                </ul>
+              </td> 
+            </tr>
+            <tr>
+              <td><img class="icon-image" src="images/raytheon_logo.jpeg"></td>
+              <td>
+                <b>Software Engineer, Raytheon, Marlborough, MA (1996-1999)</b>
+                <ul>
+                    <li>Developed UIs for the FAA’s STARS (Standard Terminal Automation Replacement 
+                        System) Air Traffic Control Situation Data Display.
+                    </li>
+                    <li>
+                        Teamed with Systems Engineers to design an interface to collect and display 
+                        information from a time-critical distributed battle simulation test-bed.
+                    </li>
+                </ul>
+              </td> 
+            </tr>
+          </table>
     </div>
 
-    <div id='Volunteer Experience'><a name='Volunteer Experience'></a></div>
+    <div id='Education'><a name='Education'></a></div>
     <div class="component">
-        <h2>Volunteering</h2>
-
-        <ol class="timeline">
-            <li class="timeline-item | extra-space">
-                <span class="timeline-item-icon | filled-icon">
-                    <div class="avatar">
-                        <img alt src="images/mailchimpHeader-logo1.png" loading="lazy">
-                    </div>
-                </span>
-                <div class="timeline-item-wrapper">
-                    <div class="timeline-item-description">
-                        <h3>2020 - 2023</h3>
-                        <span>Comm Team/Lead<br>LSPO, Sudbury, MA</span>
-                    </div>
-                    <div class="comment">
-                        <p>I was happy to be the technical lead for the Lincoln-Sudbury Regional High School 
-                            Parent/Guardian Organization's Communication Team. The school 
-                            needed technical expertise to transition their website from an antiquated CMS to 
-                            Wordpress. After successfully transferring all the data to the new platform and 
-                            designing their new website, I stayed on to update/maintain their site and publish 
-                            weekly newsletters.</p>
-                    </div>
-            </li>
-
-            <li class="timeline-item | extra-space">
-                <span class="timeline-item-icon | filled-icon">
-                    <div class="avatar">
-                        <img alt src="images/ssc.jpg" loading="lazy">
-                    </div>
-                </span>
-                <div class="timeline-item-wrapper">
-                    <div class="timeline-item-description">
-                        <h3>2020 - 2023</h3>
-                        <span>Grocery Shopper<br>Sudbury Senior Center, Sudbury, MA</span>
-                    </div>
-                    <div class="comment">
-                        <p>During my tenure as a volunteer grocery shopper at the Sudbury Senior Center,
-                            I forged meaningful connections with the senior I had the privilege to assist. 
-                            This experience has been deeply enriching, and I am gratified to maintain a close 
-                            and enduring friendship with one of the seniors I had the honor to support.</p>
-                    </div>
-            </li>
-
-
-            <li class="timeline-item | extra-space">
-                <span class="timeline-item-icon | filled-icon">
-                    <div class="avatar">
-                        <img alt src="images/playSudbury.jpg" loading="lazy">
-                    </div>
-                </span>
-                <div class="timeline-item-wrapper">
-                    <div class="timeline-item-description">
-                        <h3>2017-2019</h3>
-                        <span>Vice Chair<br>PlaySudbury, Sudbury, MA</span>
-                    </div>
-                    <div class="comment">
-                        <p>I was inspired to help children with disabilities when my son was diagnosed 
-                            with Autism Spectrum Disorder at an early age. His quick wit and unique 
-                            perspective motivated me to advocate for children with learning disabilities 
-                            by providing them opportunities to reach their potential and enrich our community. 
-                            I joined PlaySudbury upon learning that some children in our community could not 
-                            play on the playground with their friends. Working with Jean Nam was nothing short 
-                            of inspirational. While volunteering I created the organization's logo and helped 
-                            out wherever Jean needed me.</p>
-                    </div>
-            </li>
-
-            <li class="timeline-item | extra-space">
-                <span class="timeline-item-icon | filled-icon">
-                    <div class="avatar">
-                        <img alt src="images/lda.jpg" loading="lazy">
-                    </div>
-                </span>
-                <div class="timeline-item-wrapper">
-                    <div class="timeline-item-description">
-                        <h3>2013-2016</h3>
-                        <span>Chief Technical Officer<br>LDA of Lake Forest, Lake Forest, IL</span>
-                    </div>
-                    <div class="comment">
-                        <p>The Lake Forest/Lake Bluff branch of the Learning Disabilities Association focused 
-                            on fundraising for the school district. Special Education staff would apply for grants 
-                            for new equipment, tools, furniture, curiculum and other accommodations for the students. 
-                            The extraordinary staff would use the grant money to bring cutting edge resources 
-                            into the school district allowing them to take risks the schoolboard would not fund. 
-                            I was proud to update their website and add a commerce platform for fundraising. 
-                            The platform provided the LDA with an opportunity to reach a wider audience and 
-                            streamline the process of accepting donations while allowing them to manage their 
-                            fundraising efforts more efficiently.</p>
-                    </div>
-            </li>
-        </ol>        
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th style="width:100px;"></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><img class="icon-image" src="images/umasslowell.png"></td>
+                <td><b>Cyber Security Graduate Certificate</b>, 
+                    University of Massachusetts Lowell, May 2025<br>
+                    GPA: 4.0 (Current)
+                </td>
+            </tr>
+            <tr>
+                <td><img class="icon-image" src="images/sjfc.png"></td>
+                <td><b>BS, Computer Science</b>, St. John Fisher University, Rochester NY<br>
+                    GPA: 3.74
+                </td>
+            </tr>
+            <tr>
+                <td><img class="icon-image" src="images/sjfc.png"></td>
+                <td><b>BA, Philosophy</b>, St. John Fisher University, Rochester NY<br>
+                    GPA: 3.66
+                </td>
+            </tr>
+        </table>
     </div>
 
 
@@ -340,64 +188,103 @@
     <div class="component">
         <h2>Publications</h2>
         <p class="left-border">
-            Patrick Hurley, Partha Pal, Matt Tan Creti, <strong>Amy Fedyk</strong>, 
-            “Continuous Mission- Oriented Assessment (CMA) of Assurance.” 
-            Fifth Workshop on Recent Advances in Intrusion Tolerant Systems at 
-            the 41st IEEE/IFIP International Conference on Dependable Systems and Networks (DSN) 
+            Patrick Hurley, Partha Pal, Matt Tan Creti, <strong>Amy Fedyk</strong>,
+            “Continuous Mission- Oriented Assessment (CMA) of Assurance.”
+            Fifth Workshop on Recent Advances in Intrusion Tolerant Systems at
+            the 41st IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)
             June 27, 2011, Hong Kong.
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-file-earmark-text" viewBox="0 0 16 16">
                 <a xlink:href="https://apps.dtic.mil/sti/tr/pdf/ADA556120.pdf">
-                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
+                    <path
+                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0" />
                 </a>
             </svg>
         </p>
         <p class="left-border">
-            <strong>Amelia Fedyk</strong>, Michael Atighetchi, Partha Pal. “Leveraging ESM Platforms for 
-            Continuous Mission- Oriented Assessment of Information Assurance.” 
-            The 6th International Conference on Network and Services Management (CNSM 2010), 
+            <strong>Amelia Fedyk</strong>, Michael Atighetchi, Partha Pal. “Leveraging ESM Platforms for
+            Continuous Mission- Oriented Assessment of Information Assurance.”
+            The 6th International Conference on Network and Services Management (CNSM 2010),
             Niagra Falls, Canada, October 2010
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
-                <a xlink:href="https://www.researchgate.net/publication/224212430_Leveraging_ESM_platforms_for_continuous_mission-oriented_assessment_of_information_assurance">
-                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                <a
+                    xlink:href="https://www.researchgate.net/publication/224212430_Leveraging_ESM_platforms_for_continuous_mission-oriented_assessment_of_information_assurance">
+                    <path
+                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0" />
                 </a>
             </svg>
         </p>
         <p class="left-border">
-            P. Collins, <strong>A. Fedyk</strong>, L. Goldston, G. Kratkiewicz, S. Stevens, J. Tustin, 
-            “Expanding the U.S. Transportation Command’s Analysis of Mobility Platform (AMP) 
-            Federation to Model Aerial Ports of Debarkation (APODs),” Paper No. 06S-SIW-023, 
-            Proceedings of the 2006 Spring Interoperability Workshop, 
+            P. Collins, <strong>A. Fedyk</strong>, L. Goldston, G. Kratkiewicz, S. Stevens, J. Tustin,
+            “Expanding the U.S. Transportation Command’s Analysis of Mobility Platform (AMP)
+            Federation to Model Aerial Ports of Debarkation (APODs),” Paper No. 06S-SIW-023,
+            Proceedings of the 2006 Spring Interoperability Workshop,
             Simulation Interoperability Standards Organization, April 2006, Huntsville, AL.
-    
+
         </p>
         <p class="left-border">
-            <strong>A. Fedyk</strong>, G. Kratkiewicz, J. Berliner, M. Davis, B. DePass, R. Lazarus, R. Bobrow, 
-            “Adaptive Optimization of Solution Time In A Distributed Multi-agent System,” 
-            International Conference on Integration of Knowledge Intensive Multi-Agent Systems (KIMAS), 
+            <strong>A. Fedyk</strong>, G. Kratkiewicz, J. Berliner, M. Davis, B. DePass, R. Lazarus, R. Bobrow,
+            “Adaptive Optimization of Solution Time In A Distributed Multi-agent System,”
+            International Conference on Integration of Knowledge Intensive Multi-Agent Systems (KIMAS),
             April 2005, Waltham, MA.
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-file-earmark-text" viewBox="0 0 16 16">
                 <a xlink:href="https://ieeexplore.ieee.org/document/1427092">
-                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
+                    <path
+                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0" />
                 </a>
             </svg>
         </p>
         <p class="left-border">
-            G. Kratkiewicz, <strong>A. Fedyk</strong>, D. Cerys, “Integrating a Distributed Agent-Based Simulation into an HLA Federation,” 
-            Paper No. 04S-SIW-018, Proceedings of the 2004 Spring Interoperability Workshop, 
+            G. Kratkiewicz, <strong>A. Fedyk</strong>, D. Cerys, “Integrating a Distributed Agent-Based Simulation into
+            an HLA Federation,”
+            Paper No. 04S-SIW-018, Proceedings of the 2004 Spring Interoperability Workshop,
             Simulation Interoperability Standards Organization, April 2004, Arlington, VA.
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
-                <a xlink:href="http://cobweb.cs.uga.edu/~maria/pads/papers/04S-SIW-018-Kratkiewicz.pdf">
-                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                <a xlink:href="https://www.semanticscholar.org/paper/Integrating-a-Distributed-Agent-Based-Simulation-an-Kratkiewicz-Fedyk/104c9996f189d52b0507cb21175171e8a6d0fac0">
+                    <path
+                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0" />
                 </a>
             </svg>
         </p>
     </div>
 
+    <div id='Volunteer Experience'><a name='Volunteer Experience'></a></div>
+    <div class="component">
+        <h2>Volunteering</h2>
+        <table>
+            <tr>
+                <th style="width:100px;"></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><img class="icon-image" src="images/lspo.png"></td>
+                <td><b>Communication Technical Lead</b>, 
+                    Lincoln-Sudbury Regional High School Parent/Guardian Organization; Sudbury, MA (2020-2023)
+                </td>
+            </tr>
+            <tr>
+                <td><img class="icon-image" src="images/playSudbury.jpg"></td>
+                <td><b>Vice Chair</b>, PlaySudbury; Sudbury, MA (2017 - 2019)
+                    Lincoln-Sudbury Regional High School Parent/Guardian Organization; 
+                    Sudbury, MA (2020-2023)
+                </td>
+            </tr>
+            <tr>
+                <td><img class="icon-image" src="images/lda.png"></td>
+                <td><b>Chief Technical Officer</b>, Learning Disabilities Association of 
+                    Lake Forest/Lake Bluff; Lake Forest, IL (2013-2016)
+                </td>
+            </tr>
+        </table>
+    </div>
 
 
     <div class="spacer"></div>
     <footer>
-        <p>Copyright &#169 Amelia Fedyk</p>
+        <p>Copyright &#169 2025 Amelia Fedyk</p>
     </footer>
 </body>
 
