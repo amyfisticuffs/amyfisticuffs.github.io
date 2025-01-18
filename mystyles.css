@@ -88,6 +88,14 @@
   opacity: 0.6;
 }
 
+.icon-row {
+  line-height: 2; /* Adjust row spacing */
+}
+
+.icon-cell {
+  padding: 2px 0; /* Adjust cell padding */
+}
+
 img {
   display: inline;
   margin: 0 auto;

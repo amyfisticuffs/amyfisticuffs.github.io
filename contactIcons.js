@@ -27,8 +27,12 @@ function populateContactIcons() {
 
                     // Create a new row for each icon
                     let row = newTableBody.insertRow();
+                    row.classList.add('icon-row'); // Add a class to the row
+
                     let iconCell = row.insertCell(0);
                     iconCell.innerHTML = svgout;
+                    iconCell.classList.add('icon-cell'); // Add a class to the cell
+
                 }
             });
         })
